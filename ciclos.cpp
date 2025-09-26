@@ -8,7 +8,7 @@ int main()
     cin >> r;
     while( r== 's' || r== 'S')
     {
-        cout << "Por favor digite un numero entre 1 al 4 dependiendo de la opcion que desea: " << endl;
+        cout << "Por favor digite un numero entre 1 al 3 dependiendo de la opcion que desea: " << endl;
         cin >> opcion;
         switch (opcion)
         {
@@ -26,7 +26,12 @@ int main()
             break;
 
         }
-   
+        cout << "Desea ingresar otra opcion?s/n:" << endl;
+        cin >> r;
+    }
+    if (r=!'s' || r!='S')
+    {
+        cout << "Gracias por su visita" << endl;
     }
     return 0;
 
